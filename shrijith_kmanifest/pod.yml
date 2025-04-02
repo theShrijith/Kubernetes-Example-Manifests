@@ -1,0 +1,14 @@
+apiVersuon: v1
+kind: Pod
+metadata:
+  name: sample-pod
+spec:
+  containers:
+    - name: sample-container
+      image: muralisocial123/cart-image-text:1.0
+      resources:
+        limits:
+          memory: "100Mi"
+          cpu: "100m"
+        ports:
+          - containerPort: 3000
